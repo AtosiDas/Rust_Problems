@@ -9,19 +9,19 @@ fn main() {
         .expect("Failed to read line");
 
     let target: u32 = target.trim().parse().expect("Falied to read");
-    println!("The number is: {target}");
+    //println!("The number is: {target}");
     let result = is_prime(target);
-    println!("Is the value {target} prime? {result}");
+    println!("Is the number {target} prime? {result}");
 }
 fn is_prime(target: u32) -> bool {
     if target == 1 {
-        false
+        return false;
     }
     else if target == 2 {
-        true
+        return true;
     }
     else if target == 3{
-        true
+        return true;
     }
     else{
         let mut count = 2;
